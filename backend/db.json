@@ -1,0 +1,10 @@
+{
+  "recipes": [
+    { "id": 1, "title": "Pâtes à la carbonara", "author": "Florian", "description": "Délicieuses pâtes à la carbonara maison." },
+    { "id": 2, "title": "Tiramisu", "author": "Florent", "description": "Dessert italien onctueux au café." }
+  ],
+  "users": [
+    { "id": 1, "username": "test", "password": "1234" }
+  ],
+  "favorites": []
+}
