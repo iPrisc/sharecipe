@@ -1,7 +1,35 @@
 {
   "recipes": [
     { "id": 1, "title": "Pâtes à la carbonara", "author": "Florian", "description": "Délicieuses pâtes à la carbonara maison." },
-    { "id": 2, "title": "Tiramisu", "author": "Florent", "description": "Dessert italien onctueux au café." }
+    { "id": 2, "title": "Tiramisu", "author": "Florent", "description": "Dessert italien onctueux au café." },
+    { "id": 3, "title": "Curry de légumes", "author": "Sophie", "description": "Un curry doux et parfumé aux légumes de saison." },
+    { "id": 4, "title": "Poulet basquaise", "author": "Amélie", "description": "Poulet mijoté avec des poivrons, tomates et épices." },
+    { "id": 5, "title": "Quiche lorraine", "author": "Thomas", "description": "Classique de la cuisine française à base de lardons et crème." },
+    { "id": 6, "title": "Lasagnes bolognaises", "author": "Carla", "description": "Pâtes en couches, viande hachée et sauce tomate fondante." },
+    { "id": 7, "title": "Soupe de potiron", "author": "Élodie", "description": "Velouté automnal au potiron et crème fraîche." },
+    { "id": 8, "title": "Burger maison", "author": "Julien", "description": "Pain moelleux, steak juteux, fromage fondant et sauce secrète." },
+    { "id": 9, "title": "Salade César", "author": "Claire", "description": "Salade fraîche au poulet grillé, croûtons et parmesan." },
+    { "id": 10, "title": "Crêpes sucrées", "author": "Benoît", "description": "Fine pâte dorée, servie avec sucre, miel ou confiture." },
+    { "id": 11, "title": "Ratatouille", "author": "Léa", "description": "Plat provençal coloré à base de légumes mijotés." },
+    { "id": 12, "title": "Sushi saumon", "author": "Kenta", "description": "Bouchées japonaises au riz vinaigré et saumon frais." },
+    { "id": 13, "title": "Tarte au citron meringuée", "author": "Éric", "description": "Pâte sablée, crème citron et meringue dorée." },
+    { "id": 14, "title": "Poke bowl", "author": "Nora", "description": "Bol complet au riz, avocat, saumon et légumes croquants." },
+    { "id": 15, "title": "Gaufres de Liège", "author": "Adrien", "description": "Gaufres belges moelleuses et légèrement caramélisées." },
+    { "id": 16, "title": "Pizza Margherita", "author": "Marco", "description": "Tomate, mozzarella et basilic sur pâte fine croustillante." },
+    { "id": 17, "title": "Mousse au chocolat", "author": "Julie", "description": "Dessert aérien au chocolat noir intense." },
+    { "id": 18, "title": "Pavé de saumon grillé", "author": "Kevin", "description": "Saumon grillé à la poêle avec un filet de citron." },
+    { "id": 19, "title": "Penne à la vodka", "author": "Giulia", "description": "Pâtes onctueuses à la sauce tomate et crème parfumée à la vodka." },
+    { "id": 20, "title": "Brownie fondant", "author": "Nicolas", "description": "Gâteau au chocolat riche et fondant, aux noix." },
+    { "id": 21, "title": "Risotto aux champignons", "author": "Camille", "description": "Riz crémeux et champignons sautés avec parmesan." },
+    { "id": 22, "title": "Croque-monsieur", "author": "Paul", "description": "Sandwich chaud avec jambon, fromage et béchamel." },
+    { "id": 23, "title": "Omelette aux herbes", "author": "Sabrina", "description": "Omelette légère parfumée au persil et à la ciboulette." },
+    { "id": 24, "title": "Soupe miso", "author": "Akira", "description": "Bouillon japonais au tofu, algues et pâte miso." },
+    { "id": 25, "title": "Pancakes américains", "author": "Emma", "description": "Moelleux et dorés, parfaits avec sirop d’érable." },
+    { "id": 26, "title": "Falafels maison", "author": "Ali", "description": "Boulettes de pois chiches croustillantes et parfumées." },
+    { "id": 27, "title": "Gratin dauphinois", "author": "Mathieu", "description": "Pommes de terre, crème et ail cuits au four doré." },
+    { "id": 28, "title": "Couscous royal", "author": "Fatima", "description": "Semoule fine, légumes et viandes mijotées." },
+    { "id": 29, "title": "Pad Thaï", "author": "Than", "description": "Nouilles de riz sautées au tofu, crevettes et cacahuètes." },
+    { "id": 30, "title": "Fondant au chocolat", "author": "Lucas", "description": "Petit gâteau au cœur coulant et intense en cacao." }
   ],
   "users": [
     { "id": 1, "username": "test", "password": "1234" }

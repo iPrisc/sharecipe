@@ -1,1 +1,18 @@
-<p>recipe-list works!</p>
+<div class="recipe-list">
+  <h2>Recettes disponibles</h2>
+
+  <div *ngIf="recipes.length > 0; else noRecipes" class="recipes-grid">
+    <div 
+      *ngFor="let recipe of recipes" 
+      class="recipe-card" 
+      [routerLink]="['/recipes', recipe.id]"
+    >
+      <h3>{{ recipe.title }}</h3>
+      <p>Auteur : {{ recipe.author }}</p>
+    </div>
+  </div>
+
+  <ng-template #noRecipes>
+    <p class="no-recipes">Aucune recette disponible.</p>
+  </ng-template>
+</div>
