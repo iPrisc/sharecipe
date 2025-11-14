@@ -1,14 +1,17 @@
 <div class="recipe-list">
-  <h2>Recettes disponibles</h2>
+
+  <div class="title">
+    <h2>Recettes disponibles</h2>
+  </div>
 
   <div *ngIf="recipes.length > 0; else noRecipes" class="recipes-grid">
     <div 
       *ngFor="let recipe of recipes" 
       class="recipe-card" 
-      [routerLink]="['/recipes', recipe.id]"
+      [routerLink]="['/recipe', recipe.id]"
     >
       <h3>{{ recipe.title }}</h3>
-      <p>Auteur : {{ recipe.author }}</p>
+      <p>Auteur : {{ getUserName(recipe.userId) }}</p>
     </div>
   </div>
 

@@ -6,6 +6,7 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { RecipeFormComponent } from './recipes/recipe-form/recipe-form.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { AuthGuard } from './auth/auth.guard';
 
 const routes: Routes = [
   {
@@ -13,12 +14,13 @@ const routes: Routes = [
     component: RecipeListComponent
   },
   {
-    path: 'recipes/:id',
+    path: 'recipe/:id',
     component: RecipeDetailComponent
   },
   {
     path: 'add',
-    component: RecipeFormComponent
+    component: RecipeFormComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'login',

@@ -1,10 +1,61 @@
 .header {
-  background-color: #ffc670;
-  text-align: left;
-  padding: 1rem;
+  background-color: #facc6b;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   .title {
     margin: 0;
-    color: #334155;
+    cursor: pointer;
+
+    .brand {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #334155;
+    }
+  }
+
+  .header-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .username {
+      color: #334155;
+      font-weight: 600;
+    }
+
+    .btn,
+    .logout {
+      padding: 0.55rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      border: 1px solid #ffe0a3;
+      font-size: 1rem;
+      display: inline-block;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn {
+      background-color: #fff7e6;
+      color: #334155;
+
+      &:hover {
+        background-color: #ffecc2;
+      }
+    }
+
+    .logout {
+      background-color: #fca5a5;
+      border-color: #f87171;
+      color: white;
+
+      &:hover {
+        background-color: #f87171;
+      }
+    }
   }
 }

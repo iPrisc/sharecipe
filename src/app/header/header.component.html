@@ -1,3 +1,21 @@
 <header class="header">
-  <h1 class="title">Sharecipe</h1>
+  <h1 class="title" routerLink="/">
+    <span class="brand">Sharecipe</span>
+  </h1>
+
+  <div class="header-user">
+
+    <ng-container *ngIf="!authService.isLoggedIn(); else logged">
+      <a routerLink="/login" class="btn">Connexion</a>
+    </ng-container>
+
+    <ng-template #logged>
+      <span class="username">
+        Bonjour <strong>{{ authService.user?.username }}</strong>
+      </span>
+      <a routerLink="/add" class="btn">Ajouter une recette</a>
+      <button class="btn logout" (click)="logout()">Déconnexion</button>
+    </ng-template>
+
+  </div>
 </header>
