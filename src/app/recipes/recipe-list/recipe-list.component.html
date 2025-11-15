@@ -2,17 +2,45 @@
 
   <div class="title">
     <h2>Recettes disponibles</h2>
+
+     <div class="buttons">
+
+      <button 
+        *ngIf="authService.isLoggedIn()" 
+        class="filter-btn"
+        routerLink="/add"
+      >
+        Ajouter une recette
+      </button>
+
+      <button 
+        *ngIf="authService.isLoggedIn()" 
+        class="filter-btn" 
+        (click)="toggleFavoritesView()"
+      >
+        {{ showFavoritesOnly ? 'Afficher toutes' : 'Afficher mes favoris' }}
+      </button>
+
+    </div>
   </div>
 
-  <div *ngIf="recipes.length > 0; else noRecipes" class="recipes-grid">
-    <div 
-      *ngFor="let recipe of recipes" 
-      class="recipe-card" 
-      [routerLink]="['/recipe', recipe.id]"
-    >
-      <h3>{{ recipe.title }}</h3>
-      <p>Auteur : {{ getUserName(recipe.userId) }}</p>
+  <div *ngIf="filteredRecipes.length > 0; else noRecipes" class="recipes-grid">
+
+    <div *ngFor="let recipe of filteredRecipes" class="recipe-card">
+
+      <div [routerLink]="['/recipe', recipe.id]">
+        <h3>{{ recipe.title }}</h3>
+        <p>Auteur : {{ getUserName(recipe.userId) }}</p>
+      </div>
+
+      <app-favorite-button
+        *ngIf="authService.isLoggedIn()"
+        [isFavorite]="isFavorite(recipe.id)"
+        (toggle)="toggleFavorite(recipe.id)">
+      </app-favorite-button>
+
     </div>
+
   </div>
 
   <ng-template #noRecipes>

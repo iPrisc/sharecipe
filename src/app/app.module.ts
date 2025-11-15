@@ -12,6 +12,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { provideHttpClient } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FavoriteButtonComponent } from './favorites/favorite-button/favorite-button.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     RecipeDetailComponent,
     RecipeFormComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    FavoriteButtonComponent
   ],
   imports: [
     BrowserModule,

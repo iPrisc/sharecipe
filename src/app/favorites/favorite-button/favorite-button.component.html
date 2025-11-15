@@ -1,0 +1,6 @@
+<button 
+  class="favorite-btn"
+  [class.active]="isFavorite"
+  (click)="onClick()">
+  {{ isFavorite ? 'Retirer des favoris' : 'Ajouter en favoris' }}
+</button>

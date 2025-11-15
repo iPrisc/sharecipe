@@ -53,5 +53,11 @@
       "password": "user"
     }
   ],
-  "favorites": []
+  "favorites": [
+    {
+      "id": "5c84",
+      "userId": "f284",
+      "recipeId": "823b"
+    }
+  ]
 }
