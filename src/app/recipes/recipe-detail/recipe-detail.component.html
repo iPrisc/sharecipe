@@ -1,1 +1,38 @@
-<p>recipe-detail works!</p>
+<div class="recipe-detail" *ngIf="recipe; else loading">
+  <div class="recipe-detail-card">
+
+    <h2>{{ recipe.title }}</h2>
+
+    <p>
+      <span class="label">Auteur :</span>
+      {{ getUserName(recipe.userId) }}
+    </p>
+
+    <p>
+      <span class="label">Difficulté :</span>
+      <span [style.color]="recipe.difficulty | difficultyColor">
+        {{ recipe.difficulty }}
+      </span>
+    </p>
+
+    <p class="description">
+      <span class="label">Description :</span><br>
+      {{ recipe.description }}
+    </p>
+
+    <app-favorite-button
+      *ngIf="authService.isLoggedIn()"
+      [isFavorite]="isFavorite(recipe.id)"
+      (toggle)="toggleFavorite(recipe.id)">
+    </app-favorite-button>
+
+    <button class="back-button" routerLink="/">
+      Retour à la liste
+    </button>
+
+  </div>
+</div>
+
+<ng-template #loading>
+  <p class="loading">Chargement de la recette...</p>
+</ng-template>

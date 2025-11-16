@@ -26,6 +26,23 @@
       font-weight: 600;
     }
 
+    .btn {
+      padding: 0.55rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      border: 1px solid #ffe0a3;
+      font-size: 1rem;
+      background-color: #fff7e6;
+      color: #334155;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: #ffecc2;
+      }
+    }
+
     .logout {
       padding: 0.55rem 1.2rem;
       border-radius: 8px;

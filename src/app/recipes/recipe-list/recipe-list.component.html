@@ -26,7 +26,7 @@
 
   <div *ngIf="filteredRecipes.length > 0; else noRecipes" class="recipes-grid">
 
-    <div *ngFor="let recipe of filteredRecipes" class="recipe-card">
+    <div *ngFor="let recipe of filteredRecipes" class="recipe-card" appHoverCard>
 
       <div [routerLink]="['/recipe', recipe.id]">
         <h3>{{ recipe.title }}</h3>

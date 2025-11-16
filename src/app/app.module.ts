@@ -13,6 +13,8 @@ import { RegisterComponent } from './auth/register/register.component';
 import { provideHttpClient } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FavoriteButtonComponent } from './favorites/favorite-button/favorite-button.component';
+import { HoverCardDirective } from './shared/directives/hover-card.directive';
+import { DifficultyColorPipe } from './shared/pipes/difficulty-color.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { FavoriteButtonComponent } from './favorites/favorite-button/favorite-bu
     RecipeFormComponent,
     LoginComponent,
     RegisterComponent,
-    FavoriteButtonComponent
+    FavoriteButtonComponent,
+    HoverCardDirective,
+    DifficultyColorPipe
   ],
   imports: [
     BrowserModule,

@@ -34,6 +34,13 @@
       "difficulty": "Difficile",
       "description": "Description recette5 pour test",
       "userId": "35c5"
+    },
+    {
+      "id": "8366",
+      "title": "Recette florent",
+      "difficulty": "Moyen",
+      "description": "Moyenne recette florent desc",
+      "userId": "f7ac"
     }
   ],
   "users": [
@@ -58,6 +65,16 @@
       "id": "5c84",
       "userId": "f284",
       "recipeId": "823b"
+    },
+    {
+      "id": "87f5",
+      "userId": "f284",
+      "recipeId": "351b"
+    },
+    {
+      "id": "c898",
+      "userId": "f7ac",
+      "recipeId": "89c5"
     }
   ]
 }
