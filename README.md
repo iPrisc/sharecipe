@@ -5,10 +5,10 @@ Sharecipe est une application Angular permettant de consulter, ajouter et partag
 ## Fonctionnalités
 
 - Inscription / Connexion / Déconnexion
-- Affichage de toutes les recettes
+- Affichage de toutes les recettes et de celles en favoris uniquement
 - Consultation du détail d’une recette
 - Ajout d’une recette
-- Mise en favoris d'une recette (en cours) 
+- Mise en favoris d'une recette
 
 ## Installation et lancement
 
